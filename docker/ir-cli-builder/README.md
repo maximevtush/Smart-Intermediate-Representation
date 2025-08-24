@@ -1,6 +1,6 @@
 ## The Smart Intermediate Representation Builder Image
 
-The `smartir/smart-ir-builder` image embeded a development enviroment for developers to code, build and test the project.
+The `smartir/smart-ir-builder` image embedded a development environment for developers to code, build and test the project.
 
 ### Develop
 
@@ -31,9 +31,9 @@ Under the top level of the `Smart-Intermediate-Representation` repo and run the 
 
 ### Notes About the Image
 
-- For Mac Arm64 user, please explictly specify the option `--platform linux/x86_64` to `docker build` and `docker run`, to avoid the "missing /lib64/ld-linux-x86-64.so.2" error. Ref: https://stackoverflow.com/a/69075554/12110648
+- For Mac Arm64 user, please explicitly specify the option `--platform linux/x86_64` to `docker build` and `docker run`, to avoid the "missing /lib64/ld-linux-x86-64.so.2" error. Ref: https://stackoverflow.com/a/69075554/12110648
 
-- Since the `ir_cli` crate depends on the `smart_ir_macro` and `smart_ir` crates and are refered with relative paths(as shown bellow), this two dependencies will be removed when building the `smartir/smart-ir-builder` image. The `docker_build.sh` script does the removing automatically.
+- Since the `ir_cli` crate depends on the `smart_ir_macro` and `smart_ir` crates and are referred with relative paths(as shown below), this two dependencies will be removed when building the `smartir/smart-ir-builder` image. The `docker_build.sh` script does the removing automatically.
 
     ```toml
     smart_ir_macro = { path = "../smart_ir_macro", version = "0.3.0" }
