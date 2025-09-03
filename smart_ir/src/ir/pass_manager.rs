@@ -215,7 +215,7 @@ impl<IRUnit: 'static> AnalysisManager<IRUnit> {
                     .downcast_rc::<AnalysisImpl::AnalysisResult>()
                     .unwrap_or_else(|_| {
                         panic!(
-                            "cast analysis resulst to {} failed",
+                            "cast analysis results to {} failed",
                             std::any::type_name::<AnalysisImpl::AnalysisResult>()
                         )
                     })
