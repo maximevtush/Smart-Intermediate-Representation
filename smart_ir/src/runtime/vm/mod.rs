@@ -65,7 +65,7 @@ impl VirtualMachine {
             },
             code,
             addr,
-            op_addr: Address::from("opration address"),
+            op_addr: Address::from("operation address"),
         }
     }
 }
