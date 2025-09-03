@@ -60,7 +60,7 @@ ir_cli sol2tensor $input_dir_absolute_path
 | ├- file2.json
 | └- ...
 └- output
-  ├- source_info -- infomation about contract
+  ├- source_info -- information about contract
   ├- standard_input -- solc compiler standard input json
   ├- standard_output -- solc compiler standard output json
   ├- yul -- yul src code
