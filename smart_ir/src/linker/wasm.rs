@@ -208,7 +208,7 @@ pub fn link(
     // remove empty initializers
     if let Some(data_section) = module.data_section_mut() {
         let _entries = data_section.entries_mut();
-        // TODO: can't rm the entries directly when mulitple modules
+        // TODO: can't rm the entries directly when multiple modules
         // let mut index = 0;
         // while index < entries.len() {
         //     if entries[index].value().iter().all(|b| *b == 0) {
