@@ -513,7 +513,7 @@ impl<'ctx> IR2LLVMCodeGenContext<'ctx> {
                             } else {
                                 return Err(CodeGenError {
                                 message:
-                                    "try to get field from a pointer whose elemet isn't a struct"
+                                    "try to get field from a pointer whose element isn't a struct"
                                         .to_string(),
                             });
                             }

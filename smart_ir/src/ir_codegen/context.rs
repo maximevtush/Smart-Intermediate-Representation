@@ -1151,7 +1151,7 @@ impl<'ctx> IR2LLVMCodeGenContext<'ctx> {
         // }
 
         for ir_module in &self.ir_modules {
-            // scan all module's func defintions to use in other modules
+            // scan all module's func definitions to use in other modules
             for (_, function) in &ir_module.functions {
                 self.func_definitions.borrow_mut().push(function.clone());
             }
