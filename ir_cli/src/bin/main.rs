@@ -163,7 +163,7 @@ fn main() {
                     .unwrap();
             let wasm_output_file = "a.out.wasm";
             std::fs::write(wasm_output_file, emit_wasm_bytes).unwrap();
-            println!("writen file {wasm_output_file}");
+            println!("written file {wasm_output_file}");
 
             // dump ir_abi.json
             let ctx_main_module = ctx.get_main_module();
@@ -175,7 +175,7 @@ fn main() {
                     let ir_contract_abi_json = ir_contract_abi_info.to_json();
                     let ir_abi_json_filepath = "a.out.abi.json";
                     std::fs::write(ir_abi_json_filepath, ir_contract_abi_json).unwrap();
-                    println!("writen file {ir_abi_json_filepath}");
+                    println!("written file {ir_abi_json_filepath}");
                 }
             }
         }
