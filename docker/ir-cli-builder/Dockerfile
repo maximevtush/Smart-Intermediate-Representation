@@ -2,7 +2,7 @@
 # Copyright (c) The Smart Intermediate Representation Contributors
 # SPDX-License-Identifier: Apache-2.0
 
-# this dockerfile requires on a cargo_config(line 91) and a demo_to_download_deps.Cargo.toml(refered at line 94) file exsiting at current directory
+# this dockerfile requires on a cargo_config(line 91) and a demo_to_download_deps.Cargo.toml(referred at line 94) file existing at current directory
 
 FROM centos:centos8
 
